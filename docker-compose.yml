@@ -31,7 +31,7 @@ services:
       - redis-service
       - web-service
     command: >
-      sh -c 'python -m pytest test/e2e/ -vv
+      sh -c 'python -m pytest test/e2e/ -vv --disable-warnings
       --redis-url $$REDIS_URL
       --flask-url $$FLASK_URL'
 
